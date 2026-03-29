@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeans Destroyed Negro – IBStore</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== HEADER (IBStore: nav left | logo center | icons right) ========== -->
+  <header class="site-header">
+    <div class="site-header__container">
+      <!-- Mobile hamburger -->
+      <button class="site-header__hamburger" id="menuToggle" aria-label="Menú">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Nav LEFT -->
+      <nav class="site-nav">
+        <ul class="site-nav__list">
+          <li class="site-nav__item has-dropdown">
+            <a href="#">Hombre <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <div class="site-nav__dropdown">
+              <a href="#">Jeans</a>
+              <a href="#">Deportivo</a>
+              <a href="#">Calzado</a>
+              <a href="#">Ropa Interior</a>
+              <a href="#">Accesorios Hombre</a>
+              <a href="#">Chaquetas</a>
+              <a href="#">Formal</a>
+            </div>
+          </li>
+          <li class="site-nav__item has-dropdown">
+            <a href="#">Mujer <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <div class="site-nav__dropdown">
+              <a href="#">Deportivo y Casual</a>
+              <a href="#">Jeans Mujer</a>
+              <a href="#">Vestidos y Faldas</a>
+              <a href="#">Abrigos y Chaquetas</a>
+              <a href="#">Formal Dama</a>
+              <a href="#">Trajes de baño</a>
+              <a href="#">Calzado Mujer</a>
+              <a href="#">Lencería y Pijamas</a>
+              <a href="#">Accesorios Mujer</a>
+              <a href="#">Cuidado personal</a>
+            </div>
+          </li>
+          <li class="site-nav__item has-dropdown">
+            <a href="#">Niño <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <div class="site-nav__dropdown">
+              <a href="#">Pantalones</a>
+              <a href="#">Poleras</a>
+              <a href="#">Polerones</a>
+              <a href="#">Chaquetas</a>
+            </div>
+          </li>
+          <li class="site-nav__item">
+            <a href="#">Ofertas</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Logo CENTER -->
+      <a href="/" class="site-header__logo">
+        <img src="images/logo.png" alt="IBStore">
+      </a>
+
+      <!-- Icons RIGHT: social + actions -->
+      <div class="site-header__icons">
+        <a href="https://instagram.com/ibstore.cl" target="_blank" rel="noopener" class="site-header__icon site-header__social" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="https://tiktok.com/@ibstore.cl" target="_blank" rel="noopener" class="site-header__icon site-header__social" aria-label="TikTok">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.92 2.92 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.57 6.33 6.33 0 0 0 9.37 22a6.33 6.33 0 0 0 6.33-6.33V9.18a8.16 8.16 0 0 0 4.8 1.55V7.3a4.85 4.85 0 0 1-.91-.61z"/>
+          </svg>
+        </a>
+        <div class="site-header__separator"></div>
+        <button class="site-header__icon" aria-label="Buscar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <a href="#" class="site-header__icon" aria-label="Cuenta">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+        <button class="site-header__icon site-header__cart" aria-label="Carrito" id="cartToggle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="site-header__cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== ANNOUNCEMENT BAR (marquee ticker below header) ========== -->
+  <div class="announcement-bar">
+    <div class="announcement-bar__track">
+      <span class="announcement-bar__text">Envío gratis a todo Chile sobre $69.990</span>
+      <span class="announcement-bar__dot">&bull;</span>
+      <span class="announcement-bar__text">Garantía de 10 días</span>
+      <span class="announcement-bar__dot">&bull;</span>
+      <span class="announcement-bar__text">Paga en cuotas con tus tarjetas 💳</span>
+      <span class="announcement-bar__dot">&bull;</span>
+      <span class="announcement-bar__text">Envío gratis a todo Chile sobre $69.990</span>
+      <span class="announcement-bar__dot">&bull;</span>
+      <span class="announcement-bar__text">Garantía de 10 días</span>
+      <span class="announcement-bar__dot">&bull;</span>
+      <span class="announcement-bar__text">Paga en cuotas con tus tarjetas 💳</span>
+      <span class="announcement-bar__dot">&bull;</span>
+      <span class="announcement-bar__text">Envío gratis a todo Chile sobre $69.990</span>
+      <span class="announcement-bar__dot">&bull;</span>
+      <span class="announcement-bar__text">Garantía de 10 días</span>
+      <span class="announcement-bar__dot">&bull;</span>
+    </div>
+  </div>
+
+  <!-- ========== MOBILE NAV OVERLAY ========== -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <div class="mobile-nav">
+      <div class="mobile-nav__header">
+        <img src="images/logo.png" alt="IBStore" width="120">
+        <button class="mobile-nav__close" id="mobileNavClose">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-nav__list">
+        <li><a href="#">Hombre</a></li>
+        <li><a href="#">Mujer</a></li>
+        <li><a href="#">Niño</a></li>
+        <li><a href="#">Ofertas</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ========== MAIN PRODUCT SECTION (Kaya Unite layout) ========== -->
+  <main class="product-section">
+    <div class="product-grid">
+
+      <!-- LEFT: Gallery — desktop stacked, mobile carousel -->
+      <div class="product-gallery">
+        <!-- Desktop: stacked images -->
+        <div class="product-gallery__list">
+          <div class="product-gallery__item" data-gallery-item>
+            <div class="product-gallery__badge">-23%</div>
+            <img src="images/product-1.jpg" alt="Jeans Destroyed Negro - Vista frontal" loading="eager">
+          </div>
+          <div class="product-gallery__item" data-gallery-item>
+            <img src="images/product-2.jpg" alt="Jeans Destroyed Negro - Vista lateral" loading="lazy">
+          </div>
+          <div class="product-gallery__item" data-gallery-item>
+            <img src="images/product-3.jpg" alt="Jeans Destroyed Negro - Detalle" loading="lazy">
+          </div>
+          <div class="product-gallery__item" data-gallery-item>
+            <img src="images/product-4.jpg" alt="Jeans Destroyed Negro - Vista trasera" loading="lazy">
+          </div>
+        </div>
+        <!-- Mobile: thumbnail dots -->
+        <div class="product-gallery__dots">
+          <button class="gallery-dot active" data-slide="0"></button>
+          <button class="gallery-dot" data-slide="1"></button>
+          <button class="gallery-dot" data-slide="2"></button>
+          <button class="gallery-dot" data-slide="3"></button>
+        </div>
+        <!-- Mobile: nav arrows -->
+        <button class="product-gallery__arrow product-gallery__arrow--prev" data-gallery-prev aria-label="Anterior">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="product-gallery__arrow product-gallery__arrow--next" data-gallery-next aria-label="Siguiente">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><polyline points="9 6 15 12 9 18"></polyline></svg>
+        </button>
+      </div>
+
+      <!-- RIGHT: Product info (sticky) -->
+      <div class="product-info">
+        <div class="product-info__inner">
+          <div class="product-info__category">Jeans Skinny &middot; IBStore</div>
+          <h1 class="product-info__title">Jeans Destroyed Negro</h1>
+
+          <div class="product-info__price-wrapper">
+            <span class="product-info__price">$22.990</span>
+            <span class="product-info__compare-price">$29.990</span>
+            <span class="product-info__save-badge">Ahorras $7.000</span>
+          </div>
+
+          <div class="product-info__payments">
+            <span>o 3 cuotas sin interés de <strong>$7.664</strong></span>
+          </div>
+
+          <hr class="product-info__divider">
+
+          <!-- Size Selector -->
+          <div class="product-info__option">
+            <span class="product-info__option-label">Talla</span>
+            <div class="product-info__sizes">
+              <button class="size-btn active" data-size="40">40</button>
+              <button class="size-btn" data-size="42">42</button>
+              <button class="size-btn" data-size="44">44</button>
+              <button class="size-btn disabled" data-size="46" disabled>46</button>
+              <button class="size-btn disabled" data-size="48" disabled>48</button>
+              <button class="size-btn" data-size="50">50</button>
+            </div>
+          </div>
+
+          <!-- Quantity -->
+          <div class="product-info__option">
+            <span class="product-info__option-label">Cantidad</span>
+            <div class="product-info__quantity">
+              <button class="quantity-btn" id="qtyMinus">−</button>
+              <input type="number" class="quantity-input" value="1" min="1" max="10" id="qtyInput">
+              <button class="quantity-btn" id="qtyPlus">+</button>
+            </div>
+          </div>
+
+          <!-- Add to Cart -->
+          <button class="product-info__add-to-cart" id="addToCart">
+            Agregar al carrito
+          </button>
+
+          <!-- Payment methods -->
+          <div class="product-info__payment-methods">
+            <span class="payment-label">Métodos de pago:</span>
+            <div class="payment-icons">
+              <span class="payment-icon">Visa</span>
+              <span class="payment-icon">MC</span>
+              <span class="payment-icon">AMEX</span>
+              <span class="payment-icon">Débito</span>
+            </div>
+          </div>
+
+          <hr class="product-info__divider">
+
+          <!-- Accordions -->
+          <div class="product-accordions">
+            <div class="accordion" data-accordion>
+              <button class="accordion__header" data-accordion-toggle>
+                <span>Descripción</span>
+                <svg class="accordion__icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+              <div class="accordion__body">
+                <p class="accordion__tagline">Resistente, cómodo y con estilo.</p>
+                <ul class="accordion__list">
+                  <li><strong>Ajuste:</strong> Normal fit</li>
+                  <li><strong>Tiro:</strong> Largo</li>
+                  <li><strong>Material:</strong> Algodón con elastano</li>
+                  <li><strong>Color:</strong> Negro Destroyed</li>
+                  <li><strong>Garantía:</strong> 10 días</li>
+                </ul>
+                <p class="accordion__note">Referencia del modelo: Altura 178cm, Peso 78kg, Talla usada: 42.</p>
+              </div>
+            </div>
+
+            <div class="accordion" data-accordion>
+              <button class="accordion__header" data-accordion-toggle>
+                <span>Envío y entrega</span>
+                <svg class="accordion__icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+              <div class="accordion__body">
+                <ul class="accordion__list">
+                  <li><strong>Envío gratis</strong> en compras sobre $69.990</li>
+                  <li><strong>Despacho:</strong> A todo Chile</li>
+                  <li><strong>Tiempo estimado:</strong> 3-7 días hábiles</li>
+                  <li><strong>Retiro en tienda:</strong> Disponible</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="accordion" data-accordion>
+              <button class="accordion__header" data-accordion-toggle>
+                <span>Devoluciones y garantía</span>
+                <svg class="accordion__icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+              <div class="accordion__body">
+                <ul class="accordion__list">
+                  <li><strong>Garantía:</strong> 10 días desde la recepción</li>
+                  <li><strong>Cambios:</strong> Disponibles por talla o color</li>
+                  <li><strong>Condición:</strong> Producto sin uso, con etiquetas</li>
+                  <li><strong>Proceso:</strong> Contactar vía Instagram o WhatsApp</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <hr class="product-info__divider">
+
+          <!-- Trust badges -->
+          <div class="product-info__trust">
+            <div class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+              <div>
+                <strong>Envío gratis</strong>
+                <span>Sobre $69.990</span>
+              </div>
+            </div>
+            <div class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <div>
+                <strong>Garantía 10 días</strong>
+                <span>Compra segura</span>
+              </div>
+            </div>
+            <div class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <div>
+                <strong>Todo Chile</strong>
+                <span>Despacho nacional</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========== ALSO LIKE / BESTSELLERS SECTION ========== -->
+  <section class="recommendations">
+    <div class="recommendations__container">
+      <h2 class="recommendations__title">También te puede gustar</h2>
+      <div class="recommendations__grid" id="recommendationsGrid">
+
+        <a href="#" class="rec-card">
+          <div class="rec-card__image">
+            <img src="https://ibstore.cl/cdn/shop/files/rn-image_picker_lib_temp_24d84e13-f59c-41c3-bea7-765c0c8b0bde.jpg?v=1738099694&width=600" alt="Jeans Nice" loading="lazy">
+          </div>
+          <div class="rec-card__info">
+            <h3 class="rec-card__name">Jeans Nice</h3>
+            <span class="rec-card__price">$22.990</span>
+          </div>
+        </a>
+
+        <a href="#" class="rec-card">
+          <div class="rec-card__image">
+            <img src="https://ibstore.cl/cdn/shop/files/rn-image_picker_lib_temp_caca4be6-22d0-4e29-a5a3-3edefc2cd1bd.jpg?v=1738099832&width=600" alt="Cargo 709" loading="lazy">
+          </div>
+          <div class="rec-card__info">
+            <h3 class="rec-card__name">Cargo 709</h3>
+            <span class="rec-card__price">$24.990</span>
+          </div>
+        </a>
+
+        <a href="#" class="rec-card">
+          <div class="rec-card__image">
+            <img src="https://ibstore.cl/cdn/shop/files/rn-image_picker_lib_temp_80048147-f5ec-4a01-88b9-15c7ecf77e27.jpg?v=1738099786&width=600" alt="Cargo 70888-3" loading="lazy">
+          </div>
+          <div class="rec-card__info">
+            <h3 class="rec-card__name">Cargo 70888-3</h3>
+            <span class="rec-card__price">$24.990</span>
+          </div>
+        </a>
+
+        <a href="#" class="rec-card">
+          <div class="rec-card__image">
+            <img src="https://ibstore.cl/cdn/shop/files/rn-image_picker_lib_temp_b39c5373-6768-4f55-85e7-7a46a45d550a.jpg?v=1737920917&width=600" alt="Jeans Wide Leg Mila" loading="lazy">
+          </div>
+          <div class="rec-card__info">
+            <h3 class="rec-card__name">Jeans Wide Leg Mila</h3>
+            <span class="rec-card__price">$25.990</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__container">
+        <div class="footer__grid">
+          <div class="footer__col footer__brand">
+            <img src="images/logo.png" alt="IBStore" class="footer__logo">
+            <p class="footer__tagline">Tu estilo, tu esencia. Moda urbana para toda la familia con envío a todo Chile.</p>
+            <div class="footer__social">
+              <a href="https://instagram.com/ibstore.cl" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="https://tiktok.com/@ibstore.cl" target="_blank" rel="noopener" aria-label="TikTok" class="footer__social-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.92 2.92 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.57 6.33 6.33 0 0 0 9.37 22a6.33 6.33 0 0 0 6.33-6.33V9.18a8.16 8.16 0 0 0 4.8 1.55V7.3a4.85 4.85 0 0 1-.91-.61z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__heading">Tienda</h4>
+            <ul class="footer__links">
+              <li><a href="#">Hombre</a></li>
+              <li><a href="#">Mujer</a></li>
+              <li><a href="#">Niño</a></li>
+              <li><a href="#">Ofertas</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__heading">Ayuda</h4>
+            <ul class="footer__links">
+              <li><a href="#">Centro de ayuda</a></li>
+              <li><a href="#">Seguimiento de pedido</a></li>
+              <li><a href="#">Política de devoluciones</a></li>
+              <li><a href="#">Guía de tallas</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__heading">Suscríbete</h4>
+            <p class="footer__newsletter-text">Ofertas exclusivas directo en tu correo.</p>
+            <form class="footer__form" onsubmit="return false;">
+              <input type="email" placeholder="Tu email" class="footer__input">
+              <button type="submit" class="footer__submit">&rarr;</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__container">
+        <p class="footer__copyright">&copy; 2026 IBStore. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== DRAWER CART ========== -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="drawer-cart" id="drawerCart">
+    <div class="drawer-cart__header">
+      <h3>Tu carrito</h3>
+      <button class="drawer-cart__close" id="drawerClose">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer-cart__body" id="drawerBody">
+      <div class="drawer-cart__empty">
+        <p>Tu carrito está vacío</p>
+      </div>
+    </div>
+    <div class="drawer-cart__footer" id="drawerFooter" style="display:none;">
+      <div class="drawer-cart__total">
+        <span>Total</span>
+        <strong id="drawerTotal">$0</strong>
+      </div>
+      <button class="drawer-cart__checkout">Finalizar compra</button>
+    </div>
+  </div>
+
+  <!-- ========== IMAGE ZOOM OVERLAY ========== -->
+  <div class="zoom-overlay" id="zoomOverlay">
+    <button class="zoom-overlay__close" id="zoomClose">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <img class="zoom-overlay__img" id="zoomImg" src="" alt="Zoom">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
